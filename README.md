@@ -1,2 +1,2 @@
 # amrex_dask
-Read AMReX plotfiles into numpy arrays or dask arrays
+This repo houses some code that can be used to read plotfiles from AMReX codes into numpy arrays or dask arrays, instead of interfacing with the data through e.g., [yt](https://amrex-codes.github.io/amrex/docs_html/Visualization.html#yt). At present, this repo is not a general purpose library, so users beware. My hope is that this code saves future AMReX analysts some time if they want to process data with numpy or dask. The code here was purpose-built to convert terabyte-scale AMR-Wind plotfiles to Zarr stores. These simulations were run using fixed refinement zones, which is an assumption that may not apply to output from your AMReX code. 
